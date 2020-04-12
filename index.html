@@ -1,0 +1,72 @@
+<html lang="en">
+  <head>
+    <title>勤怠抽出</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  </head>
+  <body>
+    <div class="two columns side-bar-left">
+      <label id="member-num">
+        メンバー
+      </label>
+      <ul class="member-list"></ul>
+      <p>
+        ※変更したい場合js/members.js を編集
+      </p>
+    </div>
+    <div class="six columns">
+      <h4>実行手順</h4>
+      <label>1. Microsoftにログイン</label>
+      <a href="https://itsakura.com/js-createelement" target="_blank">
+        Login
+      </a>
+      <label>2. 勤怠データ（JSON形式）を取得＆コピー(右図参照)</label>
+      <a href="a" target="_blank">
+        Microsoft Graph API
+      </a>
+      <form>
+        <label>3. 勤怠データをペースト</label>
+        <textarea class="u-full-width" placeholder="2.でコピーしたものをここに貼り付け"></textarea>
+        <label>4.  抽出したい期間を選択</label>
+        <div class="twelve columns">
+          <div class="four columns">
+            <label>開始（いつから）</label>
+            <input type="date" id="from">
+          </div>
+          <div class="four columns">
+            <label >終了(いつまで)</label>
+            <input type="date" id="to">
+          </div>
+        </div>
+        <label>5. CSVをダウンロード</label>
+        <button class="button-primary u-full-width" id="done">
+          download
+        </button>
+      </form>
+    </div>
+    <div class="side-bar-right four columns">
+
+    </div>
+  </body>
+  <script src="./js/members.js"></script>
+  <script src="./js/main.js"></script>
+  <style>
+    body {
+      font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+    }
+    form{
+      padding-top: 20px;
+    }
+    .side-bar-left{
+      height: 100%;
+      border-right: 1px solid lightgray;
+      overflow: auto;
+    }
+    .side-bar-right{
+      height: 100%;
+      border-left: 1px solid lightgray;
+    }
+    h4{
+      border-bottom: 2px solid black;
+    }
+  </style>
+</html>
