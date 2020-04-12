@@ -1,0 +1,20 @@
+body {
+  font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+}
+form{
+  padding-top: 20px;
+}
+.side-bar-left{
+  height: 100%;
+  border-right: 1px solid lightgray;
+  overflow: auto;
+}
+.side-bar-right{
+  height: 100%;
+  border-left: 1px solid lightgray;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+h3{
+  border-bottom: 2px solid black;
+}

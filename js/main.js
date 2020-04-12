@@ -24,7 +24,6 @@ names.forEach(name => {
 const memberNnum = names.length
 document.querySelector('#member-num').textContent = `対象者（${memberNnum}名）`
 
-
 const data = [
   ["aaaa","cccc"],
   ["bbbb","dddd"],
